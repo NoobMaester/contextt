@@ -1,0 +1,73 @@
+/* header */
+
+.header h1{
+    text-align: center;
+    font-size: 2rem;
+}
+.nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 80px;
+    margin-top: 0;
+}
+.nav li, .nav a{
+    color: white;
+    text-decoration: none;
+}
+.nav a:hover{
+    color: turquoise;
+}
+
+/* product */
+
+.container{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.product{
+    width: 25%;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+.desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5px;
+    margin-top: 2rem;
+}
+
+.add{
+    padding: 10px;
+    border: 2px solid turquoise;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.add:hover{
+    background-color: turquoise;
+    color: #f4f4f4;
+}
+.remove{
+    padding: 10px;
+    border: 2px solid pink;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.remove:hover{
+    background-color: pink;
+    color: #f4f4f4;
+}
+
+/* header */
+
+/* header */
