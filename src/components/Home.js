@@ -4,7 +4,7 @@ import Product from './Product';
 
 faker.seed(100);
 
-const Home = () => {
+const Home = ({cart, setCart}) => {
   const allProducts = [...Array(20)].map(() => ({
     id: faker.datatype.uuid(),
     name: faker.commerce.productName(),
@@ -13,8 +13,6 @@ const Home = () => {
   }));
 
   const [products] = useState(allProducts);
-
-  const [cart, setCart] = useState([]);
 
   return (
     <div className='container'>
