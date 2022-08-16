@@ -1,7 +1,10 @@
-import {useState, useEffect} from 'react'
-import Product from './Product'
+import {useState, useEffect, useContext} from 'react'
+import Product from './Product';
+import { Cart } from '../Context';
 
-const Cart = ({cart, setCart}) => {
+const CartPage = () => {
+
+  const { cart} = useContext(Cart);
 
   const [total, setTotal] = useState();
 
@@ -17,11 +20,11 @@ const Cart = ({cart, setCart}) => {
       <span>Total: {total}</span>
       <div className='container'>
         {cart.map((prod) => (
-          <Product prod = {prod} key = {prod.id} cart = {cart} setCart = {setCart}/>
+          <Product prod = {prod} key = {prod.id}/>
         ))}
       </div>
     </div>
   )
 }
 
-export default Cart
+export default CartPage;
